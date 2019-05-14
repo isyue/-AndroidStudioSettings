@@ -1,0 +1,17 @@
+<templateSet group="MyXMLTemplates">
+  <template name="horizontalLine" value="&lt;View&#10;            android:layout_width=&quot;match_parent&quot;&#10;            android:layout_height=&quot;0.5dp&quot;&#10;            android:background=&quot;#D0D0D0&quot; /&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="verticalLine" value="&lt;View&#10;            android:layout_width=&quot;0.5dp&quot;&#10;            android:layout_height=&quot;match_parent&quot;&#10;            android:background=&quot;#FFC6C6C6&quot; /&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="t" value="tools" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
