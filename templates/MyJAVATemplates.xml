@@ -1,0 +1,57 @@
+<templateSet group="MyJAVATemplates">
+  <template name="sw" value="switch ($type$){&#10;          case $value$:&#10;              &#10;            break;&#10;        }" description="switch" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="completeSmart()" defaultValue="0" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="viewholder" value="{ViewHolder viewHolder = null;&#10;        if (convertView == null) {&#10;            viewHolder = new ViewHolder();&#10;            convertView = View.inflate(context, R.layout.item_notice, viewGroup);&#10;            convertView.setTag(viewHolder);&#10;        } else {&#10;            viewHolder = (ViewHolder) convertView.getTag();&#10;        }&#10;return convertView;&#10;}&#10;&#10;private class ViewHolder {&#10;}" description="Adapter里面的gerView初始化" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="countDownTimer" value="//    倒计时方法&#10;    private void countDownTimer(final TextView tvSendCode) {&#10;        tvSendCode.setClickable(false);&#10;        CountDownTimer downTimer = new CountDownTimer(60000, 1000) {&#10;            @Override&#10;            public void onTick(long l) {&#10;                tvSendCode.setText(&quot;剩余时间:&quot; + &quot;(&quot; + (l / 1000) + &quot;)&quot;);&#10;            }&#10;&#10;            @Override&#10;            public void onFinish() {&#10;                tvSendCode.setText(&quot;获取验证码&quot;);&#10;                tvSendCode.setClickable(true);&#10;            }&#10;        };&#10;        downTimer.start();&#10;    }" description="倒计时方法" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="map" value="Map&lt;String,String&gt; map = new HashMap&lt;&gt;();&#10;map.put(&quot;key&quot;,&quot;value&quot;);" description="Map集合" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="case1" value="case $value$:&#10;    $content$&#10;break;" description="switch的内部简写" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="hdpc" value="/**&#10; * @author xmqian&#10; * @date $DATE$ $TIME$&#10; * @desc $doc$&#10; */" description="添加类注释" toReformat="false" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <variable name="doc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="getstr" value="getResources().getString(R.string.$a$)" description="activity获取字符串资源" toReformat="true" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getFstr" value="getActivity().getResources().getString(R.string.$a$)" description="Fragment获取字符串" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="startTask" value="public static void startTask(Context context) {&#10;        Intent intent = new Intent();&#10;        intent.setClass(context,$class$.class);&#10;        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);&#10;        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);&#10;        context.startActivity(intent);&#10;    }" description="单例开启页面" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
