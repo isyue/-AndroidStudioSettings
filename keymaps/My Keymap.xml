@@ -1,8 +1,4 @@
 <keymap version="1" name="My Keymap" parent="$default">
-  <action id="A8Translate.TranslateAction">
-    <keyboard-shortcut first-keystroke="alt t" />
-    <keyboard-shortcut first-keystroke="ctrl t" />
-  </action>
   <action id="ActivateAndroidMonitorToolWindow">
     <keyboard-shortcut first-keystroke="alt 6" />
   </action>
