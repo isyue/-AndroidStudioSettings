@@ -21,7 +21,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="case1" value="case $value$:&#10;    $content$&#10;break;" description="switch的内部简写" toReformat="true" toShortenFQNames="true">
+  <template name="case key" value="case $value$:&#10;    $content$&#10;break;" description="switch的内部简写" toReformat="true" toShortenFQNames="true">
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
